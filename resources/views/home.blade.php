@@ -1,7 +1,7 @@
 <!doctype html>
 <html lang="en">
 <head>
-    <title>Eatery Colorlib Website Template</title>
+    <title>Sawit Mitra Online</title>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
 
@@ -58,7 +58,7 @@
                 -->
                 <ul class="navbar-nav ml-auto">
                     <li class="nav-item cta-btn">
-                        <a class="nav-link" href="contact.html">Daftar Sekarang</a>
+                        <a class="nav-link" href="{{url('/register')}}">Daftar Sekarang</a>
                     </li>
                 </ul>
 
@@ -252,7 +252,6 @@
         <div class="container-fluid">
             <div class="row">
                 <div class="col-md-12 text-center heading-wrap">
-                    <h2>Testimoni</h2>
                     <span class="back-text">Testimoni</span>
                 </div>
             </div>

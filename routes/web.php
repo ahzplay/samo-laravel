@@ -16,7 +16,10 @@ use Illuminate\Support\Facades\Route;
 Route::get('/', function () {
     return view('welcome');
 });
+/*
+Route::get('/factory', function (){
+    factory(\App\User::class, 3)->create();
+});*/
 
-Route::get('/samo/cont', 'BaseController@home');
-Route::get('/samo', 'HomeController@home');
-//Route::get('/samo/home', 'BaseController@tentang');
+Route::get('/registration', 'RegistrationController@index');
+Route::post('/registrationAction','RegistrationController@registrationAction');

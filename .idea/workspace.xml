@@ -2,15 +2,21 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="5cef466a-d1b7-416b-a449-773f30d7ea94" name="Default Changelist" comment="">
+      <change afterPath="$PROJECT_DIR$/.idea/vcs.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/resources/views/welcome.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/welcome.blade.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/Http/Controllers/HomeController.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/Http/Controllers/HomeController.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/User.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/Models/User.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/database/factories/UserFactory.php" beforeDir="false" afterPath="$PROJECT_DIR$/database/factories/UserFactory.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/database/migrations/2014_10_12_000000_create_users_table.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/resources/views/home.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/home.blade.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/routes/web.php" beforeDir="false" afterPath="$PROJECT_DIR$/routes/web.php" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
     <option name="LAST_RESOLUTION" value="IGNORE" />
   </component>
-  <component name="ComposerSettings" synchronizationState="SYNCHRONIZE">
+  <component name="ComposerSettings" doNotAsk="true" synchronizationState="SYNCHRONIZE">
     <pharConfigPath>$PROJECT_DIR$/composer.json</pharConfigPath>
     <execution>
       <executable />
@@ -132,13 +138,20 @@
     <option name="showLibraryContents" value="true" />
   </component>
   <component name="PropertiesComponent">
+    <property name="ASKED_ADD_EXTERNAL_FILES" value="true" />
     <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
+    <property name="SHARE_PROJECT_CONFIGURATION_FILES" value="true" />
     <property name="WebServerToolWindowFactoryState" value="false" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$/public" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/database/seeds" />
     <property name="nodejs_package_manager_path" value="npm" />
   </component>
   <component name="RecentsManager">
+    <key name="MoveFile.RECENT_KEYS">
+      <recent name="$PROJECT_DIR$/app/Models" />
+      <recent name="$PROJECT_DIR$/app" />
+    </key>
     <key name="CopyFile.RECENT_KEYS">
+      <recent name="$PROJECT_DIR$/database/seeds" />
       <recent name="$PROJECT_DIR$/public" />
     </key>
   </component>
@@ -171,6 +184,7 @@
       <option name="presentableId" value="Default" />
       <updated>1594363574533</updated>
       <workItem from="1594363586910" duration="4373000" />
+      <workItem from="1594691445947" duration="25258000" />
     </task>
     <servers />
   </component>
@@ -178,13 +192,15 @@
     <option name="version" value="1" />
   </component>
   <component name="WindowStateProjectService">
-    <state x="402" y="23" key="#com.intellij.refactoring.rename.AutomaticRenamingDialog" timestamp="1594367557184">
-      <screen x="0" y="23" width="1280" height="723" />
+    <state x="402" y="23" key="#com.intellij.refactoring.rename.AutomaticRenamingDialog" timestamp="1594777055926">
+      <screen x="0" y="23" width="1280" height="724" />
     </state>
     <state x="402" y="23" key="#com.intellij.refactoring.rename.AutomaticRenamingDialog/0.23.1280.723@0.23.1280.723" timestamp="1594367557184" />
-    <state x="458" y="314" key="NewPhpFileDialog" timestamp="1594366184546">
-      <screen x="0" y="23" width="1280" height="723" />
+    <state x="402" y="23" key="#com.intellij.refactoring.rename.AutomaticRenamingDialog/0.23.1280.724@0.23.1280.724" timestamp="1594777055926" />
+    <state x="455" y="428" key="NewPhpFileDialog" timestamp="1594690799704">
+      <screen x="0" y="23" width="1280" height="726" />
     </state>
     <state x="458" y="314" key="NewPhpFileDialog/0.23.1280.723@0.23.1280.723" timestamp="1594366184546" />
+    <state x="455" y="428" key="NewPhpFileDialog/0.23.1280.726@0.23.1280.726" timestamp="1594690799704" />
   </component>
 </project>
