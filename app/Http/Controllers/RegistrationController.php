@@ -74,7 +74,7 @@ class RegistrationController extends Controller
     }
 
     private function checkDoubleUsermail($email) {
-        return $this->user->where('username',$email)->count();
+        return $this->user->where('username',strval($email))->count();
     }
 
     public function registrationEmailVerification(Request $req){
