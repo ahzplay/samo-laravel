@@ -13,7 +13,6 @@
 
     <link rel="stylesheet" href="{{asset('css/magnific-popup.css')}}">
 
-
     <link rel="stylesheet" href="{{asset('fonts/ionicons/css/ionicons.min.css')}}">
     <link rel="stylesheet" href="{{asset('fonts/fontawesome/css/font-awesome.min.css')}}">
     <link rel="stylesheet" href="{{asset('fonts/flaticons/font/flaticon.css')}}">
@@ -57,7 +56,7 @@
 
                 <ul class="navbar-nav ml-auto">
                     <li class="nav-item cta-btn">
-                        <a class="nav-link" href="#">Kembali ke Halaman Utama</a>
+                        <a class="nav-link" href="{{url('/samo')}}">Kembali ke Halaman Utama</a>
                     </li>
                 </ul>
 
@@ -82,12 +81,27 @@
     <div class="container">
         <div class="row">
             <div class="col-lg-6">
-                <div class="alert alert-danger">
-                    <center>
-                       dafadsfasdf
-                    </center>
-                </div>
-                <form method="post" action="{{url('/registrationAction')}}">
+                @if ($message = Session::get('success'))
+                    <div id="success-alert" class="alert alert-success alert-block">
+                        <strong>{{ $message }}</strong>
+                    </div>
+                @endif
+
+                @if ($message = Session::get('warning'))
+                    <div id="alert-warning" class="alert alert-warning alert-block">
+                        <strong>{{ $message }}</strong>
+                    </div>
+                @endif
+                @if (count($errors) > 0)
+                    <div class="alert alert-danger">
+                        <ul>
+                            @foreach ($errors->all() as $error)
+                                <li>{{ $error }}</li>
+                            @endforeach
+                        </ul>
+                    </div>
+                @endif
+                <form id="form-registration" method="post" action="{{url('/registrationAction')}}">
                     {{ csrf_field() }}
                     <div class="row">
                         <div class="col-md-12 form-group">
@@ -96,16 +110,6 @@
                                 <option value="1">Mitra Tani</option>
                                 <option value="2">Pabrik Kelapa Sawit</option>
                             </select>
-                        </div>
-                    </div>
-                    <div class="row">
-                        <div class="col-md-6 form-group">
-                            <label for="name">Nama</label>
-                            <input type="text" id="name" name="name" class="form-control ">
-                        </div>
-                        <div class="col-md-6 form-group">
-                            <label for="phone">Nomor Telepon</label>
-                            <input type="text" id="phone" name="phone" class="form-control ">
                         </div>
                     </div>
 
@@ -123,7 +127,7 @@
                     </div>
                     <div class="row">
                         <div class="col-md-12 form-group">
-                            <label for="repassword">Ulangi Password</label>
+                            <label for="repassword">Konfirmasi Password</label>
                             <input type="password" id="repassword" name="repassword" class="form-control ">
                         </div>
                     </div>
@@ -179,7 +183,7 @@
             <div class="col-md-5 mb-5">
                 <div class="mb-5">
                     <h3>Opening Hours</h3>
-                    <p><strong class="d-block">Sunday-Thursday</strong> 5AM - 10PM</p>
+                    <p><strong class="d-block">Sunday-Thursday</strong> 8AM - 5PM</p>
                 </div>
                 <div>
                     <h3>Contact Info</h3>
@@ -224,11 +228,10 @@
 <script src="{{asset('js/bootstrap.min.js')}}"></script>
 <script src="{{asset('js/owl.carousel.min.js')}}"></script>
 <script src="{{asset('js/jquery.waypoints.min.js')}}"></script>
-
 <script src="{{asset('js/jquery.magnific-popup.min.js')}}"></script>
 <script src="{{asset('js/magnific-popup-options.js')}}"></script>
-
-
 <script src="{{asset('js/main.js')}}"></script>
+<script src="{{asset('js/custom/registration.js')}}"></script>
 </body>
+
 </html>

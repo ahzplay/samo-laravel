@@ -21,5 +21,8 @@ Route::get('/factory', function (){
     factory(\App\User::class, 3)->create();
 });*/
 
+Route::get('/samo', 'HomeController@home');
 Route::get('/registration', 'RegistrationController@index');
+Route::get('/testingEmail', 'RegistrationController@kirimEmail');
 Route::post('/registrationAction','RegistrationController@registrationAction');
+Route::get('/registrationEmailVerification/{verifiedToken}/{email}','RegistrationController@registrationEmailVerification');

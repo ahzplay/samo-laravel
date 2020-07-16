@@ -14,6 +14,7 @@ class HomeController extends Controller
         $this->user = new User();
         $this->profile = new Profile();
     }
+
     public function home(){
         //$data = DB::table('users')->get();
         return view('home');
@@ -26,6 +27,7 @@ class HomeController extends Controller
     public function registerAction(){
         echo json_encode($_POST); die();
     }
+
     public function getUser(){
         /*$this->user->email = 'ari.azharr2@gmail.com';
         $this->user->phone = '082284703769';

@@ -58,9 +58,14 @@
                 -->
                 <ul class="navbar-nav ml-auto">
                     <li class="nav-item cta-btn">
-                        <a class="nav-link" href="{{url('/register')}}">Daftar Sekarang</a>
+                        <a class="nav-link" href="{{url('/registration')}}">Login</a>
+                    </li>
+                    <li>&nbsp;</li>
+                    <li class="nav-item cta-btn">
+                        <a class="nav-link" href="{{url('/registration')}}">Daftar Sekarang</a>
                     </li>
                 </ul>
+
 
             </div>
         </div>
@@ -74,8 +79,14 @@
         <div class="container">
             <div class="row slider-text align-items-center justify-content-center">
                 <div class="col-md-8 text-center col-sm-12 element-animate">
-                    <h1>Maksimalkan Keuntungan</h1>
-                    <p class="mb-5">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Commodi unde impedit, necessitatibus, soluta sit quam minima expedita atque corrupti reiciendis.</p>
+                    @if ($message = Session::get('success'))
+                        <h1>{{$message}}</h1>
+                        <p class="mb-5">Silahkan login untuk memulai transaksi anda melalui SAMO.</p>
+                    @else
+                        <h1>Maksimalkan Keuntungan</h1>
+                        <p class="mb-5">Raih keuntungan melalui SAMO. Kami menawarkan teknologi sebagai partner anda dalam memperoleh keuntungan dan sukses.</p>
+                    @endif
+
 
                 </div>
             </div>
