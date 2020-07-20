@@ -2,8 +2,12 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="5cef466a-d1b7-416b-a449-773f30d7ea94" name="Default Changelist" comment="">
+      <change afterPath="$PROJECT_DIR$/resources/views/base/adminLte.blade.php" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/Http/Controllers/RegistrationController.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/Http/Controllers/RegistrationController.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/Http/Middleware/VerifyCsrfToken.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/Http/Middleware/VerifyCsrfToken.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/resources/views/base.blade.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/resources/views/home.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/home.blade.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/routes/web.php" beforeDir="false" afterPath="$PROJECT_DIR$/routes/web.php" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -143,18 +147,23 @@
     <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
     <property name="SHARE_PROJECT_CONFIGURATION_FILES" value="true" />
     <property name="WebServerToolWindowFactoryState" value="false" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$/app/Models" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/public" />
     <property name="nodejs_package_manager_path" value="npm" />
   </component>
   <component name="RecentsManager">
-    <key name="MoveFile.RECENT_KEYS">
-      <recent name="$PROJECT_DIR$/app" />
-      <recent name="$PROJECT_DIR$/app/Models" />
-    </key>
     <key name="CopyFile.RECENT_KEYS">
+      <recent name="$PROJECT_DIR$/public" />
+      <recent name="$PROJECT_DIR$/resources/js" />
+      <recent name="$PROJECT_DIR$/resources/adminlte" />
       <recent name="$PROJECT_DIR$/app/Models" />
       <recent name="$PROJECT_DIR$/database/seeds" />
+    </key>
+    <key name="MoveFile.RECENT_KEYS">
+      <recent name="$PROJECT_DIR$/resources/views/layout/adminLte" />
+      <recent name="$PROJECT_DIR$/resources/views/base" />
+      <recent name="$PROJECT_DIR$/resources/views/baseAdminLte" />
       <recent name="$PROJECT_DIR$/public" />
+      <recent name="$PROJECT_DIR$/app" />
     </key>
   </component>
   <component name="RunManager">
@@ -187,7 +196,8 @@
       <updated>1594363574533</updated>
       <workItem from="1594363586910" duration="4373000" />
       <workItem from="1594691445947" duration="31341000" />
-      <workItem from="1594862713907" duration="14525000" />
+      <workItem from="1594862713907" duration="16409000" />
+      <workItem from="1595137352823" duration="29907000" />
     </task>
     <servers />
   </component>
@@ -195,24 +205,33 @@
     <option name="version" value="1" />
   </component>
   <component name="WindowStateProjectService">
-    <state x="402" y="23" key="#com.intellij.refactoring.rename.AutomaticRenamingDialog" timestamp="1594871922164">
-      <screen x="0" y="23" width="1280" height="726" />
+    <state x="402" y="23" key="#com.intellij.refactoring.rename.AutomaticRenamingDialog" timestamp="1595149992293">
+      <screen x="0" y="23" width="1280" height="727" />
     </state>
     <state x="402" y="23" key="#com.intellij.refactoring.rename.AutomaticRenamingDialog/0.23.1280.723@0.23.1280.723" timestamp="1594367557184" />
     <state x="402" y="23" key="#com.intellij.refactoring.rename.AutomaticRenamingDialog/0.23.1280.724@0.23.1280.724" timestamp="1594777055926" />
     <state x="402" y="23" key="#com.intellij.refactoring.rename.AutomaticRenamingDialog/0.23.1280.726@0.23.1280.726" timestamp="1594871922164" />
-    <state x="455" y="428" key="NewPhpFileDialog" timestamp="1594690799704">
-      <screen x="0" y="23" width="1280" height="726" />
+    <state x="402" y="23" key="#com.intellij.refactoring.rename.AutomaticRenamingDialog/0.23.1280.727@0.23.1280.727" timestamp="1595149992293" />
+    <state x="455" y="429" key="NewPhpFileDialog" timestamp="1595149862771">
+      <screen x="0" y="23" width="1280" height="727" />
     </state>
     <state x="458" y="314" key="NewPhpFileDialog/0.23.1280.723@0.23.1280.723" timestamp="1594366184546" />
+    <state x="455" y="427" key="NewPhpFileDialog/0.23.1280.724@0.23.1280.724" timestamp="1595137683294" />
     <state x="455" y="428" key="NewPhpFileDialog/0.23.1280.726@0.23.1280.726" timestamp="1594690799704" />
+    <state x="455" y="429" key="NewPhpFileDialog/0.23.1280.727@0.23.1280.727" timestamp="1595149862771" />
+    <state x="455" y="430" key="NewPhpFileDialog/0.23.1280.729@0.23.1280.729" timestamp="1595140594808" />
+    <state x="100" y="123" width="1080" height="524" key="com.intellij.history.integration.ui.views.FileHistoryDialog" timestamp="1595213981292">
+      <screen x="0" y="23" width="1280" height="732" />
+    </state>
+    <state x="100" y="123" width="1080" height="524" key="com.intellij.history.integration.ui.views.FileHistoryDialog/0.23.1280.732@0.23.1280.732" timestamp="1595213981292" />
     <state x="317" y="217" key="com.intellij.ide.util.TipDialog" timestamp="1594865595634">
       <screen x="0" y="23" width="1280" height="726" />
     </state>
     <state x="317" y="217" key="com.intellij.ide.util.TipDialog/0.23.1280.726@0.23.1280.726" timestamp="1594865595634" />
-    <state x="221" y="110" width="837" height="550" key="find.popup" timestamp="1594868589053">
-      <screen x="0" y="23" width="1280" height="726" />
+    <state x="221" y="110" width="837" height="553" key="find.popup" timestamp="1595140288173">
+      <screen x="0" y="23" width="1280" height="729" />
     </state>
     <state x="221" y="110" width="837" height="550" key="find.popup/0.23.1280.726@0.23.1280.726" timestamp="1594868589053" />
+    <state x="221" y="110" width="837" height="553" key="find.popup/0.23.1280.729@0.23.1280.729" timestamp="1595140288173" />
   </component>
 </project>

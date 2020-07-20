@@ -58,11 +58,11 @@
                 -->
                 <ul class="navbar-nav ml-auto">
                     <li class="nav-item cta-btn">
-                        <a class="nav-link" href="{{url('/registration')}}">Login</a>
+                        <a class="nav-link" href="{{url('/login')}}">Login</a>
                     </li>
                     <li>&nbsp;</li>
                     <li class="nav-item cta-btn">
-                        <a class="nav-link" href="{{url('/registration')}}">Daftar Sekarang</a>
+                        <a class="nav-link" href="{{url('/registration')}}">Daftar</a>
                     </li>
                 </ul>
 
